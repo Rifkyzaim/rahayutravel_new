@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#edf5ff">
+    <meta name="description" content="RAHAYU TRAVEL — booking travel Pangkalan Kerinci dan Pekanbaru.">
+    <title>Rahayu Travel — Liquid Glass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>   
+    
+    <div class="app">
+        <header class="glass nav">
+            <a class="logo" href="#">✦ RAHAYU<span>TRAVEL</span></a>
+            <nav>
+                <a href="#booking">Booking</a>
+                <a href="#schedules">Jadwal</a>
+                <a href="#features">Layanan</a>
+            </nav>
+            <button id="openAdmin" class="soft-btn">⚙ Admin</button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div>
+                    <span class="eyebrow">✦ YOUR JOURNEY, ELEVATED</span>
+                    <h1>Perjalanan lebih<br><em>nyaman.</em> Booking lebih<br><em>mudah.</em></h1>
+                    <p>Travel Pangkalan Kerinci ↔ Pekanbaru dengan pengalaman booking modern. Pilih jadwal dan ajukan perjalanan hanya dalam beberapa langkah.</p>
+                    <div class="actions">
+                        <a class="btn" href="#booking">Pesan perjalanan ↗</a>
+                        <a class="text-btn" href="#schedules">Lihat jadwal ↓</a>
+                    </div>
+                    <div class="perks">
+                        <span>✦ Antar jemput</span>
+                        <span>✦ Snack gratis</span>
+                        <span>✦ Booking praktis</span>
+                    </div>
+                </div>
+                <div class="glass visual">
+                    <div class="visual-top">
+                        <span>GOOD TRAVEL / EXPERIENCE</span>
+                        <span>✦ PREMIUM</span>
+                    </div>
+                    <div class="car">
+  <img src="Fortuner-VN-Turbo1.jpg" alt="Toyota Fortuner">
+</div>
+                    <div class="route-line"></div>
+                    <div class="visual-bottom">
+                        <strong>Move with ease.</strong>
+                        <span>RIAU, INDONESIA</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="booking" class="section">
+                <div class="section-title">
+                    <div>
+                        <span class="eyebrow">BOOK YOUR SEAT</span>
+                        <h2>Rencanakan perjalanan.</h2>
+                    </div>
+                    <span class="tag">⚡ Cepat & simpel</span>
+                </div>
+                <div class="glass booking">
+                    <form id="bookingForm">
+                        <div class="fields">
+                            <label>Dari
+                                <select id="from" required>
+                                    <option>Pangkalan Kerinci</option>
+                                    <option>Pekanbaru</option>
+                                </select>
+                            </label>
+                            <label>Ke
+                                <select id="to" required>
+                                    <option>Pekanbaru</option>
+                                    <option>Pangkalan Kerinci</option>
+                                </select>
+                            </label>
+                            <label>Tanggal
+                                <input id="date" type="date" required>
+                            </label>
+                            <label>Jam keberangkatan
+                                <select id="time" required></select>
+                            </label>
+                            <label>Nama penumpang
+                                <input id="name" required maxlength="80" placeholder="Nama lengkap">
+                            </label>
+                            <label>Nomor WhatsApp
+                                <input id="phone" type="tel" required placeholder="08xxxxxxxxxx">
+                            </label>
+                            <label>Jumlah kursi
+                                <input id="seats" type="number" min="1" max="6" value="1" required>
+                            </label>
+                            <label>Penjemputan
+                                <select id="pickup">
+                                    <option>Door-to-door</option>
+                                    <option>Meeting point</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label>Alamat / titik jemput
+                            <input id="address" required placeholder="Masukkan lokasi penjemputan">
+                        </label>
+                        <div class="total-row">
+                            <div>
+                                <span>Estimasi total</span>
+                                <strong id="total">Rp90.000</strong>
+                                <small>Harga contoh — konfirmasi admin</small>
+                            </div>
+                            <button class="btn" type="submit">Ajukan booking ↗</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="schedules" class="section">
+                <div class="section-title">
+                    <div>
+                        <span class="eyebrow">TRAVEL SCHEDULE</span>
+                        <h2>Jadwal keberangkatan.</h2>
+                    </div>
+                </div>
+                <div id="scheduleCards" class="cards"></div>
+            </section>
+
+            <section id="features" class="section">
+                <div class="section-title">
+                    <div>
+                        <span class="eyebrow">WHY GOOD TRAVEL</span>
+                        <h2>Perjalanan tanpa ribet.</h2>
+                    </div>
+                </div>
+                <div class="cards">
+                    <article class="glass feature">
+                        <div class="emoji">🏠</div>
+                        <h3>Fleksibel</h3>
+                        <p>Pilihan door-to-door atau meeting point sesuai konfirmasi admin.</p>
+                    </article>
+                    <article class="glass feature">
+                        <div class="emoji">🍱</div>
+                        <h3>Snack gratis</h3>
+                        <p>Teman perjalanan untuk membuat perjalanan lebih nyaman.</p>
+                    </article>
+                    <article class="glass feature">
+                        <div class="emoji">💬</div>
+                        <h3>Konfirmasi mudah</h3>
+                        <p>Permintaan booking bisa diteruskan ke admin lewat WhatsApp.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2026 Rahayu Travel <span>Crafted for better journeys ✦</span>
+        </footer>
+    </div>
+
+    <dialog id="adminDialog" class="glass admin">
+        <div class="admin-head">
+            <div>
+                <span class="eyebrow">CONTROL CENTER</span>
+                <h2>Admin Dashboard</h2>
+            </div>
+            <button id="closeAdmin" class="soft-btn">✕ Tutup</button>
+        </div>
+        <div id="loginView">
+            <p class="muted">Dashboard demo lokal. PIN demo tersedia di README.</p>
+            <input id="pin" type="password" placeholder="PIN demo">
+            <button id="loginBtn" class="btn">Masuk</button>
+        </div>
+        <div id="dashboard" hidden>
+            <div class="stats">
+                <div class="glass stat">
+                    <span>Total booking</span>
+                    <strong id="bookingCount">0</strong>
+                </div>
+                <div class="glass stat">
+                    <span>Total kursi</span>
+                    <strong id="seatCount">0</strong>
+                </div>
+                <div class="glass stat">
+                    <span>Estimasi omzet</span>
+                    <strong id="revenue">Rp0</strong>
+                </div>
+            </div>
+            <div class="admin-head">
+                <h3>Data booking</h3>
+                <button id="exportCsv" class="soft-btn">↓ Export CSV</button>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Rute</th>
+                            <th>Jadwal</th>
+                            <th>Kursi</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows"></tbody>
+                </table>
+            </div>
+            <div class="admin-head">
+                <h3>Kelola jam demo</h3>
+            </div>
+            <form id="timeForm" class="time-form">
+                <input id="newTime" type="time" required>
+                <button class="soft-btn" type="submit">+ Tambah jam</button>
+            </form>
+            <div id="timeTags" class="tags"></div>
+            <p class="muted">Data hanya ada di browser ini. Login ini bukan keamanan produksi.</p>
+        </div>
+    </dialog>
+
+    <div id="toast" role="status"></div>
+    <script src="script.js"></script>
+</body>
+</html>
